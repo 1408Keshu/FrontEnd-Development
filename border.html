@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+         .hidden{
+            background-color: aquamarine;
+            border:7px dotted black ;
+            /* border:3px dotted black ; */
+            border: hidden;
+            border-radius: 50%;
+            text-align: center;
+        }
+        .none{
+            background-color: aquamarine;
+            border:3px dotted black ;
+            border: none;
+            border-radius: 45%;
+            text-align: center;
+        }
+        .mix{
+            background-color: aquamarine;
+            border: 3px green;
+            border-style: dashed double dotted ;
+            /* border: mixed; */
+            border-radius: 50%;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>The border Style Property</h2>
+    <p>This property specific what kind of border to display</p>
+    <p class="hidden">A Hidden Border</p>
+    <p class="none">none Border</p>
+    <p class="mix">A Mixed border</p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <h1 style="text-align: center; ">Don't have an Account? Sign-Up Here!</h1>
+    <div class="content" style="display: flex;align-items: center;justify-content: center;">
+
+        <div class="form" style="height: fit-content; background-color: rgb(242, 221, 255);width: fit-content; padding: 20px;border-radius: 10px;color: rgb(94, 0, 94); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+            
+            <form style="display: flex ; flex-direction: column; gap: 2px;">
+                <label for="name">Name</label>
+                <input type="text" placeholder="First name " id=" name" name="name">
+                <br>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email id">
+                <br>
+                <label for="cities">Select City</label>
+                <select name="cities" id="cities">
+                    <option value="select">Select</option>
+                    <option value="Noida">Noida</option>
+                    <option value="Delhi">Delhi<option>
+                        <option value="Gurgaon">Gurgaon</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Bangalore">Bangalore</option>
+                        
+                    </select>
+                    
+                    <label for="Address">Address:</label>
+                    <textarea name="address" id="address" cols="30" rows="5" placeholder="write ....." ></textarea>
+                    
+                    <label for="gender">Gender</label>
+                    <div class="">
+
+                        <input type="radio" value="male" name="gender">male
+                        <input type="radio" value="female" name="gender">female
+                        <input type="radio" value="others" name="gender">others
+                    </div>
+                    
+                    <label for="password" >Password</label>
+                    <input type="password" name="password" placeholder="enter your password" >
+                    <label for="upload">Upload file:</label>
+                    
+                    <input type="file" name="file" ><br>
+                    <div class="button" style="display: flex; justify-content: center; gap: 10px;">
+                        <input type="submit" value="submit">
+                        <input type="reset">
+                    </div>
+                    
+                    
+                    
+                </form>
+            </div>
+            </div>
+            
+</body>
+</html>
