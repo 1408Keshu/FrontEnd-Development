@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="bg-blue-300 h-20 ">Box 1</div>
+    <div class="absolute top-10 left-20 bg-amber-600 h-10 "> Box 2 (absolute)</div>
+    <div class="bg-green-500 h-20 ">Box 3</div>
+    <div class="relative  w-40 h-40 bg-blue-500">
+        I am relative (move from where I am  normally be)
+    </div>
+    <div class="relative  w-40 h-40 bg-blue-500 top-10 left-10">
+        I am relative (moved 10px down and right)
+    </div>
+    <div class="relative w-64 h-64 bg-gray-200 top-20">
+        <div class=" text-center absolute w-40 h-40 bg-blue-400 top-12 left-12 ">
+            I am absolute
+        </div>
+    </div>
+</body>
+</html>

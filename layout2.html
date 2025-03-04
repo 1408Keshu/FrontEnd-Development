@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    .grid_Container{
+        display: flex;
+        height: 95vh;
+        width: 100%;
+        border: 2px solid black;
+        grid-template-areas: 
+                "logo" "firstbar"  "firstbar" "firstbar" "firstbar" "firstbar"
+                "logo"  "Secondbar" "Secondbar" "Secondbar" "Secondbar" "Secondbar"
+                "logo"  "bars" "bars" "bars" "bars" "bars" "bars"
+                "navigation"  "content" "content" "content" "content" "content" "content" 
+                "whitespace" "footer" "footer" "footer" "footer" "footer" "footer" ;
+        grid-template-columns: 400px 1fr 1fr 1fr 1fr 1fr 1fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr  1fr ;
+    }
+    .logo{
+        column-span: 3;
+        background-color: green;
+        grid-area: logo;
+        border: 2px solid black;
+        
+        /* column-span: 3; */
+    }
+    .firstbar{
+        border: 2px solid black;
+        grid-area: firstbar;
+        background-color: green;
+        
+    }
+    .Secondbar{
+        border: 2px solid black;
+        grid-area: Secondbar;
+        /* background-color: green; */
+        
+    }
+    .bars{
+        border: 2px solid black;
+        grid-area: bars;
+        background-color: green;
+        
+    }
+    .navigation{
+        border: 2px solid black;
+        /* background-color: green; */
+        grid-area: navigation;
+        
+    }
+    .content{
+        border: 2px solid black;
+        grid-area: content;
+        /* background-color: green; */
+        
+    }
+    .whitespace{
+        grid-area: whitespace;
+        border: 2px solid black;
+        /* background-color: green; */
+        
+    }
+    .footer{
+        border: 2px solid black;
+        grid-area: footer;
+        background-color: green;
+
+    }
+   </style>
+</head>
+<body>
+    <div class="grid_Container">
+        <div class="logo">LOGO</div>
+        <div class="firstbar">Firstbar</div>
+        <div class="Secondbar">Secondbar</div>
+        <div class="bars">bar</div>
+        <div class="bars">bar</div>
+        <div class="bars">bar</div>
+        <div class="bars">bar</div>
+        <div class="bars">bar</div>
+        <div class="bars">bar</div>
+        <div class="navigation">Navigation</div>
+        <div class="content">Content</div>
+        <div class="whitespace">WhiteSpace</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

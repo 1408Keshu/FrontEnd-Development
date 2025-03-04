@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-green-100">
+    <form action="" class="flex flex-col bg-green-200 items-center shadow-md p-9 w-fit mx-auto my-20" >
+        <input class="bg-green-300 p-2 text-white rounded placeholder:text-white " id="name" type="text" placeholder="Enter your name"><br>
+        <input class="bg-green-300 p-2 text-white rounded placeholder:text-white " id="email" type="email" placeholder="Enter your email"><br>
+        <input class="bg-green-300 p-2 text-white rounded placeholder:text-white " id="password" type="password" placeholder="Enter your password"><br>
+        <textarea name="suggestion" id="suggestion" class="bg-green-300 p-2 text-white rounded  placeholder:text-white " rows="4" cols="30" placeholder="Enter your Sugestion"></textarea>
+        <input class="bg-green-500 p-2 text-white rounded mt-10" type="submit" value="Submit" id="btn">
+    </form>
+    <Script>
+        const name = document.getElementById('name');
+        const email = document.getElementById('email');
+        const password = document.getElementById('password');
+        const suggestion = document.getElementById('suggestion');
+        document.getElementById("btn").addEventListener('click',()=>{
+            confirm(`Are these correct \n Name :${name.value} \n Email: ${email.value} \n Password: ${password.value} \n Your Suggestion: ${suggestion.value}`);
+
+        })
+        document.getElementById("suggestion").addEventListener('keyup',(e)=>{
+            if(e.keyCode === 13){
+                alert(` Your Suggestion: ${suggestion.value}`);
+            }
+        })
+    </Script>
+</body>
+</html>

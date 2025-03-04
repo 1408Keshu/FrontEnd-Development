@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <nav class="bg-blue-600 text-white p-4">
+        <h1 class="text-xl font-bold ">My website</h1>
+    </nav>
+    <div class="flex flex-col md:flex-row">
+        <aside class="bg-gray-800 text-white w-full md:w-1/4 p-4"> 
+            <ul>
+                <li class="p-2 hover:bg-gray-700 "><a href="#">Home</a></li>
+                <li class="p-2 hover:bg-gray-700 "><a href="#">About</a></li>
+                <li class="p-2 hover:bg-gray-700 "><a href="#">Services</a></li>
+                <li class="p-2 hover:bg-gray-700 "><a href="#">Contact</a></li>
+                
+            </ul>
+        </aside>
+        <main class="flex-1 p-6 bg-white shadow-md">
+            <h2 class="text-2xl font-bold mb-4">Welcome to My Website</h2>
+            <p class="text-gray-700 ">This is a simple layout using Tailing CSS</p>
+            <div class="grid   grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+                <div class="bg-blue-200 p-4 rounded">Box 1</div>
+                <div class="bg-yellow-200 p-4 rounded">Box 2</div>
+                <div class="bg-green-200 p-4 rounded">Box 3</div>
+            </div>
+        </main>
+        
+    </div>
+    <footer class=" bg-gray-900 text-white text-center p-4 mt-68 ">
+        &copy; 2025 My Website .All rights are  reserved
+
+    </footer>
+
+</body>
+</html>

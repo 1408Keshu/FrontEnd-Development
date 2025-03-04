@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link href="./src/input.css" rel="stylesheet">
+    
+    
+</head>
+<body class="bg-gray-200 " >
+  <h1 class="text-5xl font-extrabold text-center mb-20">Tailwind CSS Typography Example</h1>
+  <div class="container mx-auto m-10">
+    <section class="mb-12">
+      <h1 class="text-3xl font-bold  mb-4">Heading</h1>
+      <h1 class="text-5xl font-bold ">Heading 1</h1>
+      <h2 class="text-4xl font-bold" >Heading 2</h2>
+      <h3 class="text-3xl font-bold ">Heading 3</h3>
+      <h4 class="text-2xl font-semibold" >Heading 4</h4>
+      <h5 class="text-1xl font-bold ">Heading 5</h5>
+      <h6 class="text-1xl  ">Heading 6</h6>
+    </section>
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Blockquote</h2>
+      <blockquote class="border-l-4 border-blue-500 pl-4 italic text-gray-600">
+        "Tailwind Css makes styling effeortless and highly customizable."
+      </blockquote>
+
+
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-bold mb-4">Lists</h2>
+      <ul class="list-disc pl-6 mb-4">
+        <li class="mb-2">Unordered list item 1</li>
+        <li class="mb-2">Unordered list item 2</li>
+        <li class="mb-2">Unordered list item 3</li>
+        <li class="mb-2">Unordered list item 4</li>
+      </ul>
+
+    </section>
+    <section class="my-12">
+
+      <h1 class="text-2xl font-bold mb-4">Inline text Styles</h1>
+      <p>
+        You can style span within  <span class=" font-bold"> bold</span>,
+        <span class="italic"> italic</span>,<span class="line-through"> line-through </span>, Utilities .You can also change <span class=" text-blue-500"> text-color </span> and <span class="bg-amber-200"> background color </span>
+      </p>
+
+    </section>
+  </div>
+  <p class=" mb-4 text-blue-400 hover:underline hover:text-blue-700">The quick brown fox jumps over th lazy dog</p>
+  <p class="hover:overline mb-4 ">The quick brown fox jumps over th lazy dog</p>
+  <p class="hover:line-through mb-4 ">The quick brown fox jumps over th lazy dog</p>
+  <p class="hover:no-underline underline mb-4">The quick brown fox jumps over th lazy dog</p>
+  <!-- <button class="hover:bg-blue-600">button</button> -->
+  
+  <p class=" mb-4 text-blue-300"> <a href="/" class=" hover:decoration-blue-800 hover:underline">The quick brown </a>fox jumps over th lazy dog</p>
+  <p class=" underline mb-4">The quick brown fox jumps over th lazy dog</p>
+  <p class="ordinal"> 1st</p>
+  <p class="slashed-zero">The quick brown fox jumps over th lazy dog</p>
+  <p class="oldstyle-nums">1234567890</p>
+  <p class="">1234567890</p>
+  
+  <dl class="border  p-3">
+    <dt class="...">Subtotal</dt>
+    <dd class="text-right slashed-zero tabular-nums bg-amber-100  px-3 mb-3">$100.0</dd>
+    <dt class="...">Total</dt>
+    <dd class="text-right slashed-zero tabular-nums bg-amber-100 px-5 mb-3">$130.0</dd>
+    <dt class="">Total</dt>
+    <dd class="text-right slashed-zero tabular-nums bg-amber-100 px-5 mb-3">$240.0</dd>
+  </dl>
+  <table class="table-auto w-full border-collapse border border-gray-200">
+      <div class="overflow-x-auto">
+      <tbody>
+        <tr>
+          <th class="border border-gray-300 px-4 py-2">Name</th>
+          <th class="border border-gray-300 px-4 py-2">Age</th>
+          <th class="border border-gray-300 px-4 py-2">Post</th>
+          <th class="border border-gray-300 px-4 py-2">Address </th>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2 text-center">28</td>
+          <td class="border border-gray-300 px-4 py-2 text-center">John Doe</td>
+          <td class="border border-gray-300 px-4 py-2 text-center">Software Engineer</td>
+          <td class="border border-gray-300 px-4 py-2 text-center">New York</td>
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2 text-center">Jane Smith</td>
+          <td class="border border-gray-300 px-4 py-2 text-center">32</td>
+          <td class="border border-gray-300 px-4 py-2 text-center">Graphical Designer</td>
+          <td class="border border-gray-300 px-4 py-2 text-center">San Francisco</td>
+
+        </tr>
+        <tr>
+          <td class="border border-gray-300 px-4 py-2 text-center">Arith</td>
+          <td class="border border-gray-300 px-4 py-2 text-center">18</td>
+          <td class="border border-gray-300 px-4 py-2 text-center">Full Stack Developer</td>
+          <td class="border border-gray-300 px-4 py-2 text-center">Amirpur</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</body>
+</html>

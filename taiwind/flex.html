@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1 class="text-4xl text-center">justify</h1>
+    <div class="flex flex-col text-center  text-xl space-y-4 h-fit bg-gray-200 p-4">
+        <div class="flex justify-start text-center bg-blue-500 h-16">
+            <div class="bg-yellow-500  text-center w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex justify-center text-center bg-red-400 h-16">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex justify-end bg-blue-300 h-16">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex justify-between bg-orange-400 h-16">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex justify-around bg-green-300 h-16">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex justify-evenly bg-violet-500 h-16">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+    </div>
+    <h1 class="text-4xl">align item</h1>
+    <div class="flex flex-col text-center  text-xl space-y-4 h-fit bg-gray-200 p-4">
+        <div class="flex items-center text-center bg-blue-500 h-32">
+            <div class="bg-yellow-500  text-center w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex items-start text-center bg-red-400 h-32">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex items-end bg-blue-300 h-32">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex justify-around items-baseline bg-orange-400 h-32">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex justify-between items-center  bg-green-300 h-32">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex justify-center items-center bg-violet-500 h-32">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+    </div>
+
+    <!-- self -->
+     <h1 class="text-3xl text-center">self</h1>
+    <div class="flex flex-col text-center   text-xl space-y-4 h-fit bg-gray-200 p-4">
+        <div class="flex  text-center  bg-blue-500 h-32">
+            <div class="bg-yellow-500  text-center w-16 h-16 self-center">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 self-baseline">Item 2</div>
+        </div>
+        <div class="flex  text-center bg-red-400 h-32">
+            <div class="bg-yellow-500 w-16 h-16 self-end">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex  bg-blue-300 h-32">
+            <div class="bg-yellow-500 w-16 h-16 self-start">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 self-center">Item 2</div>
+        </div>
+        <!-- <div class="flex justify-around items-baseline bg-orange-400 h-32">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex justify-between items-center  bg-green-300 h-32">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div>
+        <div class="flex justify-center items-center bg-violet-500 h-32">
+            <div class="bg-yellow-500 w-16 h-16 ">Item 1</div>
+            <div class="bg-green-500 w-16 h-16 ">Item 2</div>
+        </div> -->
+    </div>
+    
+</body>
+</html>
